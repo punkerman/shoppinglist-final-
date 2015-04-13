@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shopping list</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_categories">Categorias</string>
+    <string name="title_activity_category_products">Productos</string>
+    <string name="textCant">Cantidad a comprar:</string>
+    <string name="textPrice">precio</string>
+    <string name="textBrand">marca</string>
+</resources>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorias"
+        android:id="@+id/category"
+        android:onClick="categoriesBtn"
+        android:background="#50DB49"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/MyList"
+        android:layout_alignStart="@+id/MyList"
+        android:layout_alignRight="@+id/MyList"
+        android:layout_alignEnd="@+id/MyList" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi lista"
+        android:onClick="listBtn"
+        android:id="@+id/MyList"
+        android:background="#50DB49"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/category"
+        android:layout_alignRight="@+id/promo"
+        android:layout_alignEnd="@+id/promo"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapa"
+        android:onClick="mapBtn"
+        android:id="@+id/map"
+        android:background="#50DB49"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/MyList"
+        android:layout_alignRight="@+id/MyList"
+        android:layout_alignEnd="@+id/MyList"
+        android:layout_alignLeft="@+id/MyList"
+        android:layout_alignStart="@+id/MyList" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promos"
+        android:onClick="promoBtn"
+        android:id="@+id/promo"
+        android:background="#50DB49"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/map"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shopping" />
+
+</RelativeLayout>

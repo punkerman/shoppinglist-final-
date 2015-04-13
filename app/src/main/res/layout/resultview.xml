@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/result_list_view">
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="img"
+        android:src="@drawable/nodisponible"
+
+        android:scaleType="centerInside"/>
+    <TextView
+        android:id="@+id/txt_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre prod"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/imgProduct"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/txt_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBrand"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_producto" />
+    <TextView
+        android:id="@+id/txtvw_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textPrice"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_marca"
+        android:layout_alignLeft="@+id/txt_marca"
+         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/choose"
+        android:src="@drawable/plus"
+        android:onClick="prompt"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/imgProduct" />
+
+</RelativeLayout>
