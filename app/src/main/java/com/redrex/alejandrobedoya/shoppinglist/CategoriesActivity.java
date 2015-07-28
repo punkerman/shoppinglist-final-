@@ -23,7 +23,7 @@ public class CategoriesActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_categories, menu);
-        return true;
+        return false;
     }
 
     @Override
@@ -58,5 +58,63 @@ public class CategoriesActivity extends ActionBarActivity {
         act.putExtra("categoria","pasta");
         startActivity(act);
     }
-    //agregar mas categorias
+    public void babyBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","bebe");
+        startActivity(act);
+    }
+    public void cerealsBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","cereal");
+        startActivity(act);
+    }
+    public void embBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","embutidos");
+        startActivity(act);
+    }
+    public void enlBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","enlatados");
+        startActivity(act);
+    }
+    public void fruitsBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","fruta");
+        startActivity(act);
+    }
+    public void toysBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","juguete");
+        startActivity(act);
+    }
+    public void lactBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","lacteos");
+        startActivity(act);
+    }
+    public void cleanBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","limpieza");
+        startActivity(act);
+    }public void breadBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","panaderia");
+        startActivity(act);
+    }
+    public void bakeryBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","pasteleria");
+        startActivity(act);
+    }
+    public void vegisBtn(View v){
+        Intent act= new Intent(this,CategoryProductsActivity.class);
+        act.putExtra("categoria","vegetales");
+        startActivity(act);
+    }
+
+
+
+
+
 }

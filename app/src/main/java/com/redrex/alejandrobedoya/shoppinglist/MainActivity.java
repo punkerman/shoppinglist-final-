@@ -19,19 +19,17 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return false;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+
         if (id == R.id.action_settings) {
             return true;
         }
@@ -40,6 +38,18 @@ public class MainActivity extends ActionBarActivity {
     }
     public void categoriesBtn(View v){
         Intent act = new Intent(this,CategoriesActivity.class);
+        startActivity(act);
+    }
+    public void listBtn(View v){
+        Intent act = new Intent(this,MyShopListActivity.class);
+        startActivity(act);
+    }
+    public void mapBtn(View v){
+        Intent act = new Intent(this,MapActivity.class);
+        startActivity(act);
+    }
+    public void promoBtn(View v){
+        Intent act = new Intent(this,PromosActivity.class);
         startActivity(act);
     }
 }

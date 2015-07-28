@@ -9,6 +9,7 @@ public class Product {
     private String price;
     private String relation;
     private String image;
+    private String position;
 
     public void setProduct(String product) {
         this.product = product;
@@ -26,6 +27,7 @@ public void setRelation(String relation) {this.relation=relation;}
     public void setImage(String image) {
         this.image = image;
     }
+    public void setPosition(String position){this.position = position;}
 
     public String getProduct() {
         return product;
@@ -38,7 +40,7 @@ public void setRelation(String relation) {this.relation=relation;}
     public String getPrice() {
         return price;
     }
-
+    public String getPosition() {return position;}
     public String getImage() {
         return image;
     }

@@ -1,11 +1,26 @@
 <resources>
     <string name="app_name">Shopping list</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_categories">Categorias</string>
     <string name="title_activity_category_products">Productos</string>
-    <string name="textCant">Cantidad a comprar:</string>
-    <string name="textPrice">precio</string>
-    <string name="textBrand">marca</string>
+    <string name="textCant">Cantidad:</string>
+    <string name="textPrice">Precio</string>
+    <string name="textBrand">Marca</string>
+    <string name="title_activity_list">Mi Lista</string>
+    <string name="listTit">Mi Lista</string>
+    <string name="emptyList">lista vacia</string>
+    <string name="title_activity_my_shop_list">Mi lista de compras</string>
+    <string name="nombreProd">Nombre prod</string>
+    <string name="prodName">Nombre del producto</string>
+    <string name="cant">cantidad</string>
+    <string name="relation">relacion</string>
+    <string name="title_activity_map">Mapa</string>
+    <string name="title_activity_promos_main">Promociones</string>
+
+
+    <string name="title_section1">+ código</string>
+    <string name="title_section2">Premios</string>
+    <string name="title_section3">Mis puntos</string>
+    <string name="title_activity_promos">Promociones</string>
+    <string name="img">img</string>
 </resources>

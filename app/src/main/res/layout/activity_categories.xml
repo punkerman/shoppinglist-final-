@@ -1,5 +1,11 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -30,10 +36,126 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pastaBtn"
+        android:onClick="pastaBtn"
         android:layout_marginTop="20dp"
         android:background="@drawable/pasta"
         android:layout_below="@+id/drinks"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/baby"
+        android:onClick="babyBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/zona_bebes"
+        android:layout_below="@+id/pastaBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cereals"
+        android:onClick="cerealsBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cereales"
+        android:layout_below="@+id/baby"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emb"
+        android:onClick="embBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/embutidos"
+        android:layout_below="@+id/cereals"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enl"
+        android:onClick="enlBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/enlatados"
+        android:layout_below="@+id/emb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruits"
+        android:onClick="fruitsBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/frutas"
+        android:layout_below="@+id/enl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toys"
+        android:onClick="toysBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/jugueteria"
+        android:layout_below="@+id/fruits"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lact"
+        android:onClick="lactBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lacteos"
+        android:layout_below="@+id/toys"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clean"
+        android:onClick="cleanBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/limpieza"
+        android:layout_below="@+id/lact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bread"
+        android:onClick="breadBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/panaderia"
+        android:layout_below="@+id/clean"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bakery"
+        android:onClick="bakeryBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pasteleria"
+        android:layout_below="@+id/bread"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vegis"
+        android:onClick="vegisBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/verduras"
+        android:layout_below="@+id/bakery"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
+</ScrollView>

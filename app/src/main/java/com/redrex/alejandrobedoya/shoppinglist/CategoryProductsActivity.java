@@ -1,6 +1,7 @@
 package com.redrex.alejandrobedoya.shoppinglist;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -28,36 +29,13 @@ String category;
 
 
     }
-    // ventana emergente del boton agregar
-    public void prompt(View v) {
-       AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater li = LayoutInflater.from(this);
-        View prompt = li.inflate(R.layout.product_confirmation, null);
-        builder.setView(prompt);
-        builder.setCancelable(false)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(getBaseContext(), "item agregado", Toast.LENGTH_LONG).show();
-                        //  agregar a base de datos
 
-                    }
-                })
-                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                // Cancelamos el cuadro de dialogo
-                        dialog.cancel();
-                    }
-                });
-        builder.create();
-        builder.show();
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate el menu;
         getMenuInflater().inflate(R.menu.menu_category_products, menu);
-        return true;
+        return false;
     }
 
     @Override

@@ -24,9 +24,6 @@ public class ProductListFragment extends Fragment implements Extractdata {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        //se obtiene la categoria
-       // String a=getActivity().getIntent().getStringExtra("categoria");
-
         View rootView = inflater.inflate(R.layout.fragment_category_products, container, false);
         listViewProducts = (ListView)rootView.findViewById(R.id.result_list_view);
         starter();
@@ -48,4 +45,5 @@ public class ProductListFragment extends Fragment implements Extractdata {
     public void onFetchFailure(String msg) {
         Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG).show();
     }
+
 }

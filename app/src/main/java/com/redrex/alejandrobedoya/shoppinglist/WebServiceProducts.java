@@ -20,10 +20,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by alejandro on 4/11/2015.
- */
-public class WebServiceProducts extends AsyncTask<String, Void, String> {
+    public class WebServiceProducts extends AsyncTask<String, Void, String> {
     private final Extractdata listener;
     private String category;
     private String msg;
@@ -84,7 +81,9 @@ public class WebServiceProducts extends AsyncTask<String, Void, String> {
                 // precio
                 prod.setPrice(new String(json.getString("precio").getBytes("ISO-8859-1"), "UTF-8"));
                 // relacion
-                prod.setRelation(new String(json.getString("relacion").getBytes("ISO-8859-1"), "UTF-8"));
+                prod.setRelation("Bs/" + new String(json.getString("relacion").getBytes("ISO-8859-1"), "UTF-8"));
+                //ubicacion del producto para mapa
+                prod.setPosition(new String(json.getString("ubicacion").getBytes("ISO-8859-1"), "UTF-8"));
                 // imagen
                 prod.setImage(json.getString("imagen"));
                 prods.add(prod);
